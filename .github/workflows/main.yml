@@ -23,9 +23,7 @@ jobs:
       run: dotnet build --no-restore --configuration Release
       working-directory: ./AutorizacionMiddleware/Autorizacion.Middleware
     - name: List files after build
-      run: |
-        echo "Listing all files after build"
-        find ./AutorizacionMiddleware/Autorizacion.Middleware/bin/Release -type f
+      run: ls -R ./AutorizacionMiddleware/Autorizacion.Middleware/bin/Release/net8.0
     - name: Pack
       run: dotnet pack --configuration Release
       working-directory: ./AutorizacionMiddleware/Autorizacion.Middleware
