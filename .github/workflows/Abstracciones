@@ -35,7 +35,7 @@ jobs:
         name: Autorizacion.Abstracciones
         if-no-files-found: error
         retention-days: 7
-        path: /home/runner/work/Cris-Paquetes/Cris-Paquetes/AutorizacionMiddleware/Autorizacion.Abstracciones/bin/Release/*.nupkg
+        path: /home/runner/work/Cris-Paquetes/AutorizacionMiddleware/Autorizacion.Abstracciones/bin/Release/*.nupkg
 
   release:
     runs-on: ubuntu-latest    
