@@ -12,7 +12,7 @@ namespace Autorizacion.DA.Repositorios
         public RepositorioDapper(IConfiguration configutarion, SqlConnection connection)
         {
             _configutarion = configutarion;
-            _connection = new SqlConnection(_configutarion.GetConnectionString("BDPokemon"));
+            _connection = new SqlConnection(_configutarion.GetConnectionString("BDSeguridadPokemon"));
         }
 
         public SqlConnection ObtenerRepositorioDapper()
